@@ -16,9 +16,8 @@ get_header();
 ?>
 	<div class="main">
 		<header class="main__head">
-
-	<nav class="navbar menu-color">
-     <div class="container-fluid">
+	    <nav class="navbar menu-color">
+        <div class="container-fluid">
     
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed fix-btn-color" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -146,7 +145,6 @@ get_header();
 			</h1>
     </div>
 
-
 <nav class="navbar middle-menu-color">
   <div class="container-fluid">
    
@@ -262,7 +260,6 @@ get_header();
 </nav>
 
 <div class="content_wlecome">
-
  <div class="row">
   <div class="col-md-4 col-sm-4 col-xs-6">
        <div class="welcome_images">
@@ -272,16 +269,13 @@ get_header();
   <div class="col-md-8 col-sm-8 col-xs-6">
         <div class="welcome_text">
       <h1>
-	   <?php echo ot_get_option( 'head_welcome_text' );?>
-     
+	   <?php echo ot_get_option( 'head_welcome_text' );?>     
     </h1>
 	<?php echo ot_get_option( 'welcome_textarea' );?>
 
     <p class="statment">
       <?php echo ot_get_option( 'footer_welcome_text' );?>
     </p>
-
-
        </div>
   </div>
 </div>
@@ -343,10 +337,7 @@ get_header();
  </div>
  </a>
 
-</div> <!-- class="content_main-baners" -->
-
-
-   
+</div> <!-- class="content_main-baners" -->   
 <div class="content_slider">
   <h1>Новости нашего десткого сада</h1>
   <div class="owl-carousel">
@@ -359,11 +350,9 @@ get_header();
          <h3>Любим тебя, наш город!</h3>
          <p>Дата пуликации <span>07.09.2020</span></p>
          <p> Воспитанники МБДОУ «Детский сад № 15 «Сказка» поздравляют всех жителей  с Днем города! <span>Читать далее</span></p>
-      </div>
-      
+      </div>      
  </div>
 </a>
-
   <a href="#">
   <div class="item-news">
       <div class="item-news_img">
@@ -373,11 +362,9 @@ get_header();
          <h3>На Сурском оборонительном рубеже</h3>
          <p>Дата пуликации <span>07.09.2020</span></p>
          <p>  1 сентября в  День знаний в МБДОУ «Детский сад №15 «Сказка» в дежурной группе прошло занятие «Урок мужества» <span>Читать далее</span></p>
-      </div>
-      
+      </div>      
  </div>
 </a>
-
 <a href="#">
   <div class="item-news">
       <div class="item-news_img">
@@ -387,11 +374,9 @@ get_header();
          <h3>Безопасность в нашей жизни</h3>
          <p>Дата пуликации <span>20.08.2020</span></p>
          <p>Человеческая жизнь сложна и многогранна, часто радости пересекаются с неприятностями  и идут рядом.   <span>Читать далее</span></p>
-      </div>
-      
+      </div>      
  </div>
 </a>
-
 <a href="#">
   <div class="item-news">
       <div class="item-news_img">
@@ -401,8 +386,7 @@ get_header();
          <h3>ДЕНЬ СЕМЬИ, ЛЮБВИ И ВЕРНОСТИ</h3>
          <p>Дата пуликации <span>08.07.2020</span></p>
          <p>Ежегодно 8 июля в нашей стране отмечается Всероссийский день семьи, любви и верности. <span>Читать далее</span></p>
-      </div>
-      
+      </div>      
  </div>
 </a>
   
@@ -475,171 +459,169 @@ get_header();
           <img src="<?php echo ot_get_option( 'main_slider_upload_8' );?>" alt="">
         </div>
   </div> <!-- class="photo-array" -->
-
-
   </div><!-- class="photo-galery"-->
-
 </div><!-- class="content_photo"" -->
 
 <!-- Средние банеры -->
-
+<!-- первый ряд -->
 <div class="baners-net">
- <a href="https://www.who.int/ru/" target="_blank">
+ <a href="<?php echo ot_get_option( 'main_middle_link_1' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/voz2.jpg" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_1' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Всемирная организация здравоохранения</p>
+       <p><?php echo ot_get_option( 'main_middle_text_1' );?></p>
      </div>
  </div>
  </a>
- <a href="https://git21.rostrud.gov.ru/" target="_blank">
+ <a href="<?php echo ot_get_option( 'main_middle_link_2' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/logo-prime.png" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_2' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Государственная инспекция труда в Чувашской Республике</p>
+       <p><?php echo ot_get_option( 'main_middle_text_2' );?></p>
      </div>
  </div>
  </a>
- <a href="http://gov.cap.ru/home/76/2010/blagoustroistvo/stranisa/index.htm" target="_blank">
+ <a href="<?php echo ot_get_option( 'main_middle_link_3' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/blagoshum.jpg" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_3' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Благоустройство города Шумерля</p>
+       <p><?php echo ot_get_option( 'main_middle_text_3' );?></p>
      </div>
  </div>
  </a>
- <a href="#" target="_blank">
+ <a href="<?php echo ot_get_option( 'main_middle_link_4' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/att21.jpg" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_4' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Аттестация педагогических работников</p>
+       <p><?php echo ot_get_option( 'main_middle_text_4' );?></p>
      </div>
  </div>
  </a>
- <a href="#" target="_blank">
+ <a href="<?php echo ot_get_option( 'main_middle_link_5' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/dlavas.jpg" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_5' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Для Вас, родители</p>
+       <p><?php echo ot_get_option( 'main_middle_text_5' );?></p>
      </div>
  </div>
  </a>
- <a href="#" target="_blank">
+ <!-- второй ряд --> 
+ <a href="<?php echo ot_get_option( 'main_middle_link_2_1' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/infobes.jpg" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_2_1' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Информационная безопасность и защита информации</p>
+       <p><?php echo ot_get_option( 'main_middle_text_2_1' );?></p>
      </div>
  </div>
  </a>
- <a href="#" target="_blank">
+ <a href="<?php echo ot_get_option( 'main_middle_link_2_2' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/img01.jpg" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_2_2' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Порядок действий при пожаре</p>
+       <p><?php echo ot_get_option( 'main_middle_text_2_2' );?></p>
      </div>
  </div>
  </a>
- <a href="http://old-gshum.cap.ru/sitemap.aspx?id=1989593" target="_blank">
+ <a href="<?php echo ot_get_option( 'main_middle_link_2_3' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/ter.jpg" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_2_3' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Профилактика терроризма</p>
+       <p><?php echo ot_get_option( 'main_middle_text_2_3' );?></p>
      </div>
  </div>
  </a>
- <a href="#" target="_blank">
+ <a href="<?php echo ot_get_option( 'main_middle_link_2_4' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/netcor.png" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_2_4' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Антикоррупционная деятельность</p>
+       <p><?php echo ot_get_option( 'main_middle_text_2_4' );?></p>
      </div>
  </div>
  </a>
- <a href="#" target="_blank">
+ <a href="<?php echo ot_get_option( 'main_middle_link_2_5' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/poder.jpg" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_2_5' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Новые формы поддержки семей с детьми</p>
+       <p><?php echo ot_get_option( 'main_middle_text_2_5' );?></p>
      </div>
  </div>
  </a>
- <a href="https://www.ya-roditel.ru/" target="_blank">
+
+ <!-- третий ряд -->
+ <a href="<?php echo ot_get_option( 'main_middle_link_3_1' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/logo-rod.png" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_3_1' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Сайт для пап и мам</p>
+       <p><?php echo ot_get_option( 'main_middle_text_3_1' );?></p>
      </div>
  </div>
  </a>
- <a href="https://www.spas-extreme.ru/" target="_blank">
+ <a href="<?php echo ot_get_option( 'main_middle_link_3_2' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/ehkstrim.jpg" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_3_2' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Портал детской безопасности МЧС России</p>
+       <p><?php echo ot_get_option( 'main_middle_text_3_2' );?></p>
      </div>
  </div>
  </a>
-  <a href="http://old-mintrans.cap.ru/sitemap.aspx?id=1990386" target="_blank">
+ <a href="<?php echo ot_get_option( 'main_middle_link_3_3' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/besopasnost.jpg" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_3_3' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Безопасность дорожного движения</p>
+       <p><?php echo ot_get_option( 'main_middle_text_3_3' );?></p>
      </div>
  </div>
  </a>
-  <a href="#" target="_blank">
+ <a href="<?php echo ot_get_option( 'main_middle_link_3_4' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/banpit.jpg" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_3_4' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Организация питания в детском саду</p>
+       <p><?php echo ot_get_option( 'main_middle_text_3_4' );?></p>
      </div>
  </div>
  </a>
-   <a href="http://www.garant.ru/actual/421242/" target="_blank">
+ <a href="<?php echo ot_get_option( 'main_middle_link_3_5' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/bez_int.jpg" alt="">
+       <img src="<?php echo ot_get_option( 'main_middle_baner_3_5' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Защита детей от информации, причиняющей вред их здоровью и развитию</p>
+       <p><?php echo ot_get_option( 'main_middle_text_3_5' );?></p>
      </div>
  </div>
- </a>
+ </a> 
 <?php
 	if ( function_exists('dynamic_sidebar') )
 		dynamic_sidebar('sidebar-middle-baners');
 ?>
-
-
 </div>	<!-- class="baners-net" -->
 
 <div class="on-the-map">

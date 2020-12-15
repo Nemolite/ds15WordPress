@@ -632,145 +632,161 @@ get_header();
 </div>	<!-- class="on-the-map" -->		
 
 <div class="dop-baners">
-  <a href="#" target="_blank">
+<a href="<?php echo ot_get_option( 'main_bottom_link_1' );?>" target="_blank">
  <div class="baner-inner">
      <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/punkt_konsultacionnyj.png" alt="">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_1' );?>" alt="">
      </div>
       <div class="baner-inner_text">
-       <p>Консультатционный пункт "СКАЗКА"</p>
+       <p><?php echo ot_get_option( 'main_bottom_text_1' );?></p>
+     </div>
+ </div>
+ </a>
+ <a href="<?php echo ot_get_option( 'main_bottom_link_2' );?>" target="_blank">
+ <div class="baner-inner">
+     <div class="baner-inner_img">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_2' );?>" alt="">
+     </div>
+      <div class="baner-inner_text">
+       <p><?php echo ot_get_option( 'main_bottom_text_2' );?></p>
+     </div>
+ </div>
+ </a>
+ <a href="<?php echo ot_get_option( 'main_bottom_link_3' );?>" target="_blank">
+ <div class="baner-inner">
+     <div class="baner-inner_img">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_3' );?>" alt="">
+     </div>
+      <div class="baner-inner_text">
+       <p><?php echo ot_get_option( 'main_bottom_text_3' );?></p>
+     </div>
+ </div>
+ </a>
+ <a href="<?php echo ot_get_option( 'main_bottom_link_4' );?>" target="_blank">
+ <div class="baner-inner">
+     <div class="baner-inner_img">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_4' );?>" alt="">
+     </div>
+      <div class="baner-inner_text">
+       <p><?php echo ot_get_option( 'main_bottom_text_4' );?></p>
+     </div>
+ </div>
+ </a>
+ <a href="<?php echo ot_get_option( 'main_bottom_link_5' );?>" target="_blank">
+ <div class="baner-inner">
+     <div class="baner-inner_img">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_5' );?>" alt="">
+     </div>
+      <div class="baner-inner_text">
+       <p><?php echo ot_get_option( 'main_bottom_text_5' );?></p>
+     </div>
+ </div>
+ </a>
+ <!-- второй ряд --> 
+ <a href="<?php echo ot_get_option( 'main_bottom_link_2_1' );?>" target="_blank">
+ <div class="baner-inner">
+     <div class="baner-inner_img">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_2_1' );?>" alt="">
+     </div>
+      <div class="baner-inner_text">
+       <p><?php echo ot_get_option( 'main_bottom_text_2_1' );?></p>
+     </div>
+ </div>
+ </a>
+ <a href="<?php echo ot_get_option( 'main_bottom_link_2_2' );?>" target="_blank">
+ <div class="baner-inner">
+     <div class="baner-inner_img">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_2_2' );?>" alt="">
+     </div>
+      <div class="baner-inner_text">
+       <p><?php echo ot_get_option( 'main_bottom_text_2_2' );?></p>
+     </div>
+ </div>
+ </a>
+ <a href="<?php echo ot_get_option( 'main_bottom_link_2_3' );?>" target="_blank">
+ <div class="baner-inner">
+     <div class="baner-inner_img">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_2_3' );?>" alt="">
+     </div>
+      <div class="baner-inner_text">
+       <p><?php echo ot_get_option( 'main_bottom_text_2_3' );?></p>
+     </div>
+ </div>
+ </a>
+ <a href="<?php echo ot_get_option( 'main_bottom_link_2_4' );?>" target="_blank">
+ <div class="baner-inner">
+     <div class="baner-inner_img">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_2_4' );?>" alt="">
+     </div>
+      <div class="baner-inner_text">
+       <p><?php echo ot_get_option( 'main_bottom_text_2_4' );?></p>
+     </div>
+ </div>
+ </a>
+ <a href="<?php echo ot_get_option( 'main_bottom_link_2_5' );?>" target="_blank">
+ <div class="baner-inner">
+     <div class="baner-inner_img">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_2_5' );?>" alt="">
+     </div>
+      <div class="baner-inner_text">
+       <p><?php echo ot_get_option( 'main_bottom_text_2_5' );?></p>
+     </div>
+ </div>
+ </a>
+
+ <!-- третий ряд -->
+ <a href="<?php echo ot_get_option( 'main_bottom_link_3_1' );?>" target="_blank">
+ <div class="baner-inner">
+     <div class="baner-inner_img">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_3_1' );?>" alt="">
+     </div>
+      <div class="baner-inner_text">
+       <p><?php echo ot_get_option( 'main_bottom_text_3_1' );?></p>
+     </div>
+ </div>
+ </a>
+ <a href="<?php echo ot_get_option( 'main_bottom_link_3_2' );?>" target="_blank">
+ <div class="baner-inner">
+     <div class="baner-inner_img">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_3_2' );?>" alt="">
+     </div>
+      <div class="baner-inner_text">
+       <p><?php echo ot_get_option( 'main_bottom_text_3_2' );?></p>
+     </div>
+ </div>
+ </a>
+ <a href="<?php echo ot_get_option( 'main_bottom_link_3_3' );?>" target="_blank">
+ <div class="baner-inner">
+     <div class="baner-inner_img">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_3_3' );?>" alt="">
+     </div>
+      <div class="baner-inner_text">
+       <p><?php echo ot_get_option( 'main_bottom_text_3_3' );?></p>
+     </div>
+ </div>
+ </a>
+ <!--
+ <a href="<?php echo ot_get_option( 'main_bottom_link_3_4' );?>" target="_blank">
+ <div class="baner-inner">
+     <div class="baner-inner_img">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_3_4' );?>" alt="">
+     </div>
+      <div class="baner-inner_text">
+       <p><?php echo ot_get_option( 'main_bottom_text_3_4' );?></p>
+     </div>
+ </div>
+ </a>
+ <a href="<?php echo ot_get_option( 'main_bottom_link_3_5' );?>" target="_blank">
+ <div class="baner-inner">
+     <div class="baner-inner_img">
+       <img src="<?php echo ot_get_option( 'main_bottom_baner_3_5' );?>" alt="">
+     </div>
+      <div class="baner-inner_text">
+       <p><?php echo ot_get_option( 'main_bottom_text_3_5' );?></p>
      </div>
  </div>
  </a> 
-
-   <a href="http://gkchs.cap.ru/action/activity/sostoyanie-zaschiti-naseleniya-i-territorij-ot-chr/detskaya-bezopasnostj" target="_blank">
- <div class="baner-inner">
-     <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/azbes.jpg" alt="">
-     </div>
-      <div class="baner-inner_text">
-       <p>Детская безопасность</p>
-     </div>
- </div>
- </a> 
-
-    <a href="http://www.cap.ru/events/events/2020-god/yanvarj/2020-god-god-pamyati-i-slavi" target="_blank">
- <div class="baner-inner">
-     <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/pam.jpg" alt="">
-     </div>
-      <div class="baner-inner_text">
-       <p>2020 год – Год памяти и славы</p>
-     </div>
- </div>
- </a> 
-
-  <a href="http://chebobraz.cap.ru/sitemap.aspx?id=2122101" target="_blank">
- <div class="baner-inner">
-     <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/opeka.jpg" alt="">
-     </div>
-      <div class="baner-inner_text">
-       <p>Право ребенка на защиту</p>
-     </div>
- </div>
- </a> 
-
-  <a href="#" target="_blank">
- <div class="baner-inner">
-     <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/img202.jpg" alt="">
-     </div>
-      <div class="baner-inner_text">
-       <p>Независимая оценка качества образования</p>
-     </div>
- </div>
- </a>
-
-   <a href="#" target="_blank">
- <div class="baner-inner">
-     <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/profban.jpg" alt="">
-     </div>
-      <div class="baner-inner_text">
-       <p>Я в профсоюзе</p>
-     </div>
- </div>
- </a>
-
-   <a href="#" target="_blank">
- <div class="baner-inner">
-     <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/dostup.jpeg" alt="">
-     </div>
-      <div class="baner-inner_text">
-       <p>Доступность образовательных услуг для инвалидов и детей с ОВЗ</p>
-     </div>
- </div>
- </a>
-
-   <a href="http://pfo.gov.ru/" target="_blank">
- <div class="baner-inner">
-     <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/polpred.jpg" alt="">
-     </div>
-      <div class="baner-inner_text">
-       <p>Полномочный представитель Президента РФ в Приволжском федеральном округе</p>
-     </div>
- </div>
- </a>
-    <a href="http://xn--21-dlcie3di0l.xn--p1ai/category/doshkolyonok/" target="_blank">
- <div class="baner-inner">
-     <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/placeholder-image-1.jpg" alt="">
-     </div>
-      <div class="baner-inner_text">
-       <p>Шумерлинская общественно-политическая газета «Вперед»</p>
-     </div>
- </div>
- </a>
-    <a href="http://xn--80aalcbc2bocdadlpp9nfk.xn--d1acj3b/" target="_blank">
- <div class="baner-inner">
-     <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/presondani.jpg" alt="">
-     </div>
-      <div class="baner-inner_text">
-       <p>Защита персональных данных</p>
-     </div>
- </div>
- </a>
-  <a href="http://sad.edu.cap.ru/" target="_blank">
- <div class="baner-inner">
-     <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/elektr_ochered.jpg" alt="">
-     </div>
-      <div class="baner-inner_text">
-       <p>Портал образовательных услуг</p>
-     </div>
- </div>
- </a>
-
-  <a href="http://old-medicin.cap.ru/sitemap.aspx?id=1298673" target="_blank">
- <div class="baner-inner">
-     <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/psiholog.jpg" alt="">
-     </div>
-      <div class="baner-inner_text">
-       <p>Психологическая служба Чувашии</p>
-     </div>
- </div>
- </a>
-
-  <a href="http://chebobraz.cap.ru/sitemap.aspx?id=1864667" target="_blank">
- <div class="baner-inner">
-     <div class="baner-inner_img">
-       <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/deti.jpg" alt="">
-     </div>
-      <div class="baner-inner_text">
-       <p>Электронные образовательные ресурсы</p>
-     </div>
- </div>
- </a>
+-->
 </div><!-- class="dop-baners" -->
 </div><!-- class="content" -->
 

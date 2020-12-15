@@ -70,6 +70,19 @@ function custom_theme_options() {
 				'id'    => 'main_middle_baners_3',
 				'title' => __( 'Средние банеры 3 ряд', 'theme-text-domain' ),
 			),
+			array(
+				'id'    => 'main_bottom_baners_1',
+				'title' => __( 'Нижние банеры 1 ряд', 'theme-text-domain' ),
+			),
+			array(
+				'id'    => 'main_bottom_baners_2',
+				'title' => __( 'Нижние банеры 2 ряд', 'theme-text-domain' ),
+			),
+			array(
+				'id'    => 'main_bottom_baners_3',
+				'title' => __( 'Нижние банеры 3 ряд', 'theme-text-domain' ),
+			),
+
 			// Демо
 			array(
 				'id'    => 'option_types',
@@ -843,6 +856,486 @@ function custom_theme_options() {
 			'section'      => 'main_middle_baners_3',			
 			'operator'     => 'and',
 		), 
+		/**
+		 * Нижние баннеры main_bottom_baners
+		 */
+		
+			//---------------------Первый банер,первый ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_1',
+			'label'        => __( 'Первый банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_1',
+			'label'        => __( 'Первый банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_1',
+			'label'        => __( 'Первый банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		), 
+
+			//---------------------Второй банер,первый ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_2',
+			'label'        => __( 'Второй банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_2',
+			'label'        => __( 'Второй банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_2',
+			'label'        => __( 'Второй банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		), 
+
+		
+			//---------------------Третий банер,первый ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_3',
+			'label'        => __( 'Третий банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_3',
+			'label'        => __( 'Третий банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_3',
+			'label'        => __( 'Третий банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		), 
+
+			//---------------------Четвертый банер,первый ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_4',
+			'label'        => __( 'Четвертый банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_4',
+			'label'        => __( 'Четвертый банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_4',
+			'label'        => __( 'Четвертый банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		), 
+
+			//---------------------Пятый банер,первый ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_5',
+			'label'        => __( 'Пятый банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_5',
+			'label'        => __( 'Пятый банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_5',
+			'label'        => __( 'Пятый банер, первый ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_1',			
+			'operator'     => 'and',
+		), 
+
+		/**
+		 * Средние баннеры main_bottom_baners_2
+		 */
+		
+			//---------------------Первый банер,второй ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_2_1',
+			'label'        => __( 'Первый банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_2_1',
+			'label'        => __( 'Первый банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_2_1',
+			'label'        => __( 'Первый банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		), 
+
+			//---------------------Второй банер,второй ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_2_2',
+			'label'        => __( 'Второй банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_2_2',
+			'label'        => __( 'Второй банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_2_2',
+			'label'        => __( 'Второй банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		), 
+
+		
+			//---------------------Третий банер,второй ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_2_3',
+			'label'        => __( 'Третий банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_2_3',
+			'label'        => __( 'Третий банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_2_3',
+			'label'        => __( 'Третий банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		), 
+
+			//---------------------Четвертый банер,второй ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_2_4',
+			'label'        => __( 'Четвертый банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_2_4',
+			'label'        => __( 'Четвертый банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_2_4',
+			'label'        => __( 'Четвертый банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		), 
+
+			//---------------------Пятый банер,второй ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_2_5',
+			'label'        => __( 'Пятый банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_2_5',
+			'label'        => __( 'Пятый банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_2_5',
+			'label'        => __( 'Пятый банер, второй ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_2',			
+			'operator'     => 'and',
+		), 
+
+		/**
+		 * Средние баннеры main_bottom_baners_3
+		 */
+		
+			//---------------------Первый банер,третий ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_3_1',
+			'label'        => __( 'Первый банер,третий ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_3_1',
+			'label'        => __( 'Первый банер,третий ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_3_1',
+			'label'        => __( 'Первый банер,третий ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		), 
+
+			//---------------------Второй банер,второй ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_3_2',
+			'label'        => __( 'Второй банер, третий ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_3_2',
+			'label'        => __( 'Второй банер, третий ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_3_2',
+			'label'        => __( 'Второй банер, третий ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		), 
+
+		
+			//---------------------Третий банер,второй ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_3_3',
+			'label'        => __( 'Третий банер, третий ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_3_3',
+			'label'        => __( 'Третий банер, третий ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_3_3',
+			'label'        => __( 'Третий банер, третий ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		), 
+
+			//---------------------Четвертый банер,второй ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_3_4',
+			'label'        => __( 'Четвертый банер, третий ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_3_4',
+			'label'        => __( 'Четвертый банер, третий ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_3_4',
+			'label'        => __( 'Четвертый банер, третий ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		), 
+
+			//---------------------Пятый банер,второй ряд -------------------------------//
+		   // Текст на банере
+		   array(
+			'id'           => 'main_bottom_text_3_5',
+			'label'        => __( 'Пятый банер, третий ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Текст на банере', 'theme-text-domain' ),				
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		),
+	
+			// img
+				array(
+			'id'           => 'main_bottom_baner_3_5',
+			'label'        => __( 'Пятый банер, третий ряд', 'theme-text-domain' ),
+			'desc'         => sprintf( __( 'Изображение первого банера', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),			
+			'type'         => 'upload',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		),
+		
+		// Ссылка
+		array(
+			'id'           => 'main_bottom_link_3_5',
+			'label'        => __( 'Пятый банер, третий ряд', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на сайт', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'main_bottom_baners_3',			
+			'operator'     => 'and',
+		), 
+
 
 
 

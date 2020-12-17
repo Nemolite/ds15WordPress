@@ -341,64 +341,42 @@ get_header();
 <div class="content_slider">
   <h1>Новости нашего десткого сада</h1>
   <div class="owl-carousel">
-    <a href="#">
-  <div class="item-news">
-      <div class="item-news_img">
-        <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/news1.jpg" alt=""> 
-      </div>
-      <div class="item-news_info">
-         <h3>Любим тебя, наш город!</h3>
-         <p>Дата пуликации <span>07.09.2020</span></p>
-         <p> Воспитанники МБДОУ «Детский сад № 15 «Сказка» поздравляют всех жителей  с Днем города! <span>Читать далее</span></p>
-      </div>      
- </div>
-</a>
-  <a href="#">
-  <div class="item-news">
-      <div class="item-news_img">
-        <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/news2.jpg" alt=""> 
-      </div>
-      <div class="item-news_info">
-         <h3>На Сурском оборонительном рубеже</h3>
-         <p>Дата пуликации <span>07.09.2020</span></p>
-         <p>  1 сентября в  День знаний в МБДОУ «Детский сад №15 «Сказка» в дежурной группе прошло занятие «Урок мужества» <span>Читать далее</span></p>
-      </div>      
- </div>
-</a>
+  <?php
+  $args = array(
+        'post_type' => 'post',                   
+        'order' => 'ASC',
+        'post_status' => 'publish',
+                            
+        );   
+    $query = new WP_Query($args);
+    if( $query->have_posts() ){
+        while( $query->have_posts() ){            
+            $query->the_post();			
+?>
 <a href="#">
   <div class="item-news">
       <div class="item-news_img">
-        <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/news3.jpg" alt=""> 
+        <?php echo get_the_post_thumbnail();?>
       </div>
       <div class="item-news_info">
-         <h3>Безопасность в нашей жизни</h3>
-         <p>Дата пуликации <span>20.08.2020</span></p>
-         <p>Человеческая жизнь сложна и многогранна, часто радости пересекаются с неприятностями  и идут рядом.   <span>Читать далее</span></p>
+         <h3><?php the_title();?></h3>
+         <p>Дата пуликации <span><?php the_date('j F Y');?></span></p>
+         <p><?php the_content("<span>Читать далее</span>");?></p>
       </div>      
  </div>
-</a>
-<a href="#">
-  <div class="item-news">
-      <div class="item-news_img">
-        <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/new4.jpg" alt=""> 
-      </div>
-      <div class="item-news_info">
-         <h3>ДЕНЬ СЕМЬИ, ЛЮБВИ И ВЕРНОСТИ</h3>
-         <p>Дата пуликации <span>08.07.2020</span></p>
-         <p>Ежегодно 8 июля в нашей стране отмечается Всероссийский день семьи, любви и верности. <span>Читать далее</span></p>
-      </div>      
- </div>
-</a>
+</a>           
+<?php        }       
+    }
+    wp_reset_postdata();
+?>
   
 </div> <!-- class="owl-carousel" -->
-
 </div> <!-- class="content_slider" -->
 <a href="#">
  <div class="btn-news">
     <p>Все новости</p>
  </div>
 </a>
-
 <div class="content_photo">
   <h1>Наша фотогалерея</h1>
 

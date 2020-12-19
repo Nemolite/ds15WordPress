@@ -602,19 +602,44 @@ get_header();
      </div>
  </div>
  </a> 
-<?php
-	if ( function_exists('dynamic_sidebar') )
-		dynamic_sidebar('sidebar-middle-baners');
-?>
 </div>	<!-- class="baners-net" -->
 
-<div class="on-the-map">
-  <h1>Наш детский сад на карте</h1>
-  <div class="map_inner">
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A85cd938b1b904ed91e24eaba262e7e74c69e11392cb31bd5225f8e0ef5068cb2&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
-  </div> 
-</div>	<!-- class="on-the-map" -->		
+<!-- Видеотека -->	
+<div class="content_video">
+  <h1>Наша видеотека</h1>
+  <div class="content_video-youtube">
+    <div class="row">
+    <div class="col-md-3 col-xs-12 col-sm-3">
+        <div class="youtube-mini">
+        <div class="youtube-mini-top">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4zvkNFH_fdk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+        </div>
+        <div class="youtube-mini-bottom">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WQtpBaK5jxc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        </div>          
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12 col-sm-6">
+        <div class="youtube-main" >
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eiXeTdYuZ04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12 col-sm-3">
+        <div class="youtube-mini">
+        <div class="youtube-mini-top">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NRKYK7k8b_Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="youtube-mini-bottom">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/35KvOF25Vr0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> 
+          
+        </div>
+      </div>
+    </div>
+  </div><!-- class="content_video-youtube"-->
+</div><!-- class="content_video"-->
+<!-- Видеотека end-->
 <div class="dop-baners">
 <a href="<?php echo ot_get_option( 'main_bottom_link_1' );?>" target="_blank">
  <div class="baner-inner">
@@ -773,9 +798,12 @@ get_header();
 -->
 </div><!-- class="dop-baners" -->
 </div><!-- class="content" -->
-
-
-
+<div class="on-the-map">
+  <h1>Наш детский сад на карте</h1>
+  <div class="map_inner">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A85cd938b1b904ed91e24eaba262e7e74c69e11392cb31bd5225f8e0ef5068cb2&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div> 
+</div>	<!-- class="on-the-map" -->	
 <?php
 //get_sidebar();
 get_footer();

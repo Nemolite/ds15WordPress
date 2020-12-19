@@ -70,4 +70,6 @@ $('.photo-array').slick({
 
 });
 
- 
+$(document).ready(function() {
+  $(".youtube-main").fancybox();
+}); 

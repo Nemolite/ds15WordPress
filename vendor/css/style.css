@@ -572,6 +572,7 @@ body {
   padding-top: 2px;
   background-size: contain;
   background-image: url(../images/footer-img.jpg);
+  background-repeat: repeat-x;
 }
 
 .main__footer h5 {
@@ -648,6 +649,12 @@ body {
 } /*@media only screen and (min-width : 992px) and (max-width : 1200px)*/
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .fix-size img {
+    width: 580px;
+    height: 300px;
+    border-radius: 5px;
+  }
+
   .welcome_text p {
     text-indent: 5%;
     font-size: 14px;
@@ -733,7 +740,13 @@ body {
   }
 } /*@media only screen and (min-width : 768px) and (max-width : 991px)*/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+  .fix-size img {
+    width: 580px;
+    height: 250px;
+    border-radius: 5px;
+  }
+
   .fix-btn-color-top {
     position: relative;
     float: right;
@@ -778,11 +791,11 @@ body {
 
   .content_images h1 {
     position: absolute;
-    top: 130px;
+    top: 44px;
     right: 70px;
     width: 40%;
     display: block;
-    font-size: 24px;
+    font-size: 19px;
     color: #d7070e;
     font-weight: 600;
     font-family: "IstokWebBoldItalic", sans-serif;
@@ -792,7 +805,7 @@ body {
     width: 100%;
     height: auto;
     border: 1px solid #e5e5e5;
-    margin-bottom: 20p;
+    margin-bottom: 20pх;
   }
 
   .welcome_text p {
@@ -807,7 +820,7 @@ body {
   .welcome_images {
     width: 80%;
     height: 200px;
-    margin: 120px auto;
+    margin: 55px auto;
   }
 
   .content_main-baners {
@@ -860,7 +873,7 @@ body {
 
   .main__footer h6 {
     position: absolute;
-    top: 170px;
+    top: 187px;
     left: 40px;
     width: 70%;
     display: block;
@@ -871,6 +884,91 @@ body {
     margin-top: -12px;
     margin-bottom: 0px;
   }
-} /*@media only screen and (max-width : 767px)*/
 
+  .main__footer {
+    position: relative;
+    width: 100%;
+    height: 195px;
+    margin-top: -50px;
+    padding-top: 2px;
+    background-image: url(../images/footer-img.jpg);
+    background-repeat: repeat;
+  }
+  .content_images {
+    width: 100%;
+    height: 180px;
+    z-index: 100;
+    margin-bottom: -20px;
+  }
+} /*@media only screen and (min-width: 501px) and (max-width: 767px)*/
+
+@media only screen and (max-width: 500px) {
+  .content_wlecome {
+    width: 100%;
+    height: auto;
+    border: 1px solid #e5e5e5;
+  }
+  .content_images h1 {
+    position: absolute;
+    top: 130px;
+    right: 70px;
+    width: 40%;
+    display: block;
+    font-size: 17px;
+    color: #d7070e;
+    font-weight: 600;
+    font-family: "IstokWebBoldItalic", sans-serif;
+  }
+  .fix-size img {
+    width: 580px;
+    height: 270px;
+    border-radius: 5px;
+  }
+
+  .main__footer h5 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 70%;
+    display: block;
+    font-size: 12px;
+    color: #d7070e;
+    font-family: "IstokWebBoldItalic", sans-serif;
+  }
+  .main__footer h5:nth-child(2) {
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    width: 70%;
+    display: block;
+    font-size: 12px;
+    color: #d7070e;
+    font-family: "IstokWebBoldItalic", sans-serif;
+  }
+
+  .main__footer h6 {
+    position: absolute;
+    top: 170px;
+    left: 40px;
+    width: 100%;
+    display: block;
+    font-size: 13px;
+    color: #d7070e;
+    font-weight: 600;
+    font-family: "IstokWebBoldItalic", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .main__footer {
+    position: relative;
+    width: 100%;
+    height: 195px;
+    margin-top: -50px;
+    padding-top: 2px;
+    background-size: contain;
+    background-image: url(../images/footer-img.jpg);
+    background-repeat: no-repeat;
+  }
+}
 /**********Адатив finish*****/

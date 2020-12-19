@@ -261,12 +261,12 @@ get_header();
 
 <div class="content_wlecome">
  <div class="row">
-  <div class="col-md-4 col-sm-4 col-xs-6">
+  <div class="col-md-4 col-sm-4 col-xs-12">
        <div class="welcome_images">
           <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/topmanager.jpg" alt=""> 
        </div>
   </div>
-  <div class="col-md-8 col-sm-8 col-xs-6">
+  <div class="col-md-8 col-sm-8 col-xs-12">
         <div class="welcome_text">
       <h1>
 	   <?php echo ot_get_option( 'head_welcome_text' );?>     
@@ -341,30 +341,36 @@ get_header();
 <div class="content_slider">
   <h1>Новости нашего десткого сада</h1>
   <div class="owl-carousel">
-  <?php
+  <?php  
   $args = array(
         'post_type' => 'post',                   
         'order' => 'ASC',
-        'post_status' => 'publish',
-                            
+        'post_status' => 'publish',                            
         );   
     $query = new WP_Query($args);
     if( $query->have_posts() ){
         while( $query->have_posts() ){            
-            $query->the_post();			
+            $query->the_post();
+           
 ?>
-<a href="#">
   <div class="item-news">
       <div class="item-news_img">
+      <a href="<?php echo get_permalink(); ?>">
         <?php echo get_the_post_thumbnail();?>
+      </a>  
       </div>
       <div class="item-news_info">
+      <a href="<?php echo get_permalink(); ?>">
          <h3><?php the_title();?></h3>
-         <p>Дата пуликации <span><?php the_date('j F Y');?></span></p>
+      </a>   
+         <p>Дата пуликации <span>
+         <?php          
+         the_date('j F Y');
+         ?></span></p>
          <p><?php the_content("<span>Читать далее</span>");?></p>
       </div>      
  </div>
-</a>           
+         
 <?php        }       
     }
     wp_reset_postdata();

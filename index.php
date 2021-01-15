@@ -344,8 +344,9 @@ get_header();
   <?php  
   $args = array(
         'post_type' => 'post',                   
-        'order' => 'ASC',
-        'post_status' => 'publish',                            
+        'order' => 'DESC',
+        'post_status' => 'publish', 
+        'posts_per_page' => 8,                           
         );   
     $query = new WP_Query($args);
     if( $query->have_posts() ){

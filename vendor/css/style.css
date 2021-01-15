@@ -389,6 +389,40 @@ body {
 
 /****slider finish***/
 
+/** страница новости***/
+.onenews__content {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.onenews__title {
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #d7070e;
+  font-weight: 600;
+  font-family: "IstokWebBoldItalic", sans-serif;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.onenews__text {
+  font-size: 18px;
+  line-height: 1.18;
+}
+
+.onenews__text p {
+  text-indent: 3%;
+}
+
+.empty__block {
+  width: 100%;
+  height: 100px;
+}
+
+/** end страница новости***/
+
 /******* photo********/
 
 .content_photo {

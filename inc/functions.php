@@ -23,14 +23,14 @@ function theme_options_parent($parent ) {
 add_filter( 'ot_theme_options_parent_slug', 'theme_options_parent',20 );
 
 /**
- * Подключение меню
+ * Подключение верхнегоменю
  */
 if ( ! function_exists( 'ds15_theme_menu' ) ) {
 	function ds15_theme_menu( ){
 		register_nav_menus(
 			array(	
-				'top_row_menu' => esc_html__( 'Верхний ряд меню', 'ds15topmenu' ),
-				'middle_row_menu' => esc_html__( 'Средний ряд меню', 'ds15topmenu' ),
+				'top_row_menu' => esc_html__( 'Верхний ряд меню', 'ds15' ),
+				'middle_row_menu' => esc_html__( 'Средний ряд меню', 'ds15' ),
 			)
 		);
 	}

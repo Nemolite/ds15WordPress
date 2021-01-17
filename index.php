@@ -15,7 +15,9 @@
 get_header();
 ?>
 	<div class="main">
-		<header class="main__head">
+
+
+ 		<header class="main__head">
 	    <nav class="navbar menu-color">
         <div class="container-fluid">
     
@@ -28,95 +30,30 @@ get_header();
       </button>      
     </div>   
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">	
+
+
+    <?php 
+	    wp_nav_menu( array(
+	      'menu' => 'top_row_menu',
+	      'depth' =>  2,
+	      'container' => false,
+	      'strcasecmp' => 1,
+	      'menu_class' => 'nav navbar-nav center',
+	      'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+	      'walker' => new wp_bootstrap_navwalker())
+      );
+
+      wp_nav_menu( array(
+        'menu' => 'top_row_menu',
+        'depth' =>  0,
+        'container' => false,
+        'menu_class' => 'dropdown-menu center',
+        'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+        'walker' => new wp_bootstrap_navwalker())
+      );
+    ?>
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a class="link-color" id="hover-fix-color-top" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Группы детского сада<span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Группа №1 – «Дружные ребята»</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Группа №2 – «Смешарики»</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Группа №3 – «Зернышко»</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Группа №4 – «Гномики»</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Группа №5 – «Настоящие друзья»</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Группа №6 – «Улыбка»</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Группа №7 – «Ягодка»</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Группа №8 – «Капельки»</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Группа №9 – «Солнышко»</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Группа №10 – «Теремок»</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Группа №11 – «Кроха»</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Группа №12 – «Светлячки»</a></li>
-          </ul>
-
-        </li>
-         <li class="dropdown">
-          <a class="link-color" id="hover-fix-color-top" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Педагоги<span class="caret"></span>
-          </a>
-
-          <ul class="dropdown-menu">
-            <li><a href="http://edu21.cap.ru/home/3857/sait1/main.html" target="_blank">Сайт Морозовой Инны Анатольевны</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="https://sites.google.com/site/staruhinavala5/home" target="_blank">Сайт Старухиной Валентины Александровны</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="https://sites.google.com/site/pakseevaveraalekseevna/home" target="_blank">Сайт Паксеевой Веры Алексеевны</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="https://svetgoldps.wixsite.com/mysite" target="_blank">Сайт Пототовой Светланы Геннадьевны </a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="https://sites.google.com/site/ctvmzievthkz/" target="_blank">Сайт Озяковой Светланы Валерьевны</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="https://antsemtat9.wixsite.com/tatyanasemenova" target="_blank">Сайт Семеновой Татьяны Вячеславовны</a></li>
-          </ul>
-
-        </li>
-
-        <li class="dropdown">
-          <a class="link-color" id="hover-fix-color-top" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Работа логопеда<span class="caret"></span>
-          </a>
-
-          <ul class="dropdown-menu">
-            <li><a href="#">Артикуляционная гимнастика</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Консультация для родителей</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Массаж пальцев рук</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Развитие мелкой моторики</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Рекомендации по проведению <br /> упражнений артикуляционной гимнастики</a></li>
-            
-          </ul>
-
-        </li>
-
-         <li class="dropdown">
-          <a class="link-color" id="hover-fix-color-top" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Педагог-психолог<span class="caret"></span>
-          </a>
-
-          <ul class="dropdown-menu">
-            <li><a href="#">Артикуляционная гимнастика</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Консультация для родителей</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Массаж пальцев рук</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Развитие мелкой моторики</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Рекомендации по проведению <br /> упражнений артикуляционной гимнастики</a></li>
-            
-          </ul>
-
-        </li>
-
+ 
       </ul>
 
       <form class="navbar-form navbar-left">
@@ -136,6 +73,7 @@ get_header();
   </div><!-- /.container-fluid -->
 </nav> 
 		</header>
+
 		<div class="content">
 	    <div class="content_images">
             <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/header2.jpeg" alt=""> 

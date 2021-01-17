@@ -47,17 +47,6 @@ if ( ! function_exists( 'ds15_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus(
-			array(
-				
-				/*Регистрируем верхнее меню (bootstrap) */
-				'top-menu' => esc_html__( 'one', 'ds15topmenu' ),
-				
-				
-			)
-		);
-
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
@@ -208,10 +197,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-/**
- * Register Custom Navigation Walker
- */
-require_once get_template_directory() . '/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php';
 
 
 

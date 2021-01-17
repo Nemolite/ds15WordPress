@@ -83,7 +83,7 @@ h6 {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #000;
+  background-color: #40c4ff;
 }
 
 body {
@@ -353,6 +353,13 @@ body {
 .item-news_info p:nth-child(3) {
   padding-left: 10px;
   text-indent: 10px;
+  line-height: 2;
+}
+
+.item-news_info p:nth-child(4) {
+  padding-left: 10px;
+  text-indent: 10px;
+  line-height: 1.15;
 }
 
 .item-news_info span {

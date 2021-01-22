@@ -83,10 +83,11 @@ wp_nav_menu( array(
 <div class="content">
 <div class="content_images">
    <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/header2.jpeg" alt=""> 
-   <h1>
-   <?php echo ot_get_option( 'head_main_text' );?>
-   
-   </h1>
+   <a href="<?php echo get_home_url(); ?>">
+      <h1>
+         <?php echo ot_get_option( 'head_main_text' );?> 
+      </h1>
+   </a>
 </div>
 
 <nav class="navbar middle-menu-color">

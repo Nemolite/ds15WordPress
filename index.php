@@ -69,10 +69,11 @@ get_header();
       <a href="<?php echo get_permalink(); ?>">
          <h3><?php the_title();?></h3>
       </a>   
-         <p>Дата пуликации <span>
-         <?php          
-         the_date('j F Y');
-         ?></span></p>
+         <p>Дата публикации
+            <span>
+              <?php echo get_the_date('j F Y'); ?>
+            </span>           
+          </p>
          <p><?php the_content("<span>Читать далее</span>");?></p>
       </div>      
  </div>

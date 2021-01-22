@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-<div class="onenews__content">
+
 	<main id="primary" class="site-main">
 
 		<?php
@@ -43,4 +43,4 @@ get_header();
 //get_sidebar();
 get_footer();
 ?>
-</div><!-- .onenews__content -->
+

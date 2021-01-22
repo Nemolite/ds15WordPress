@@ -133,7 +133,6 @@ body {
 .content {
   width: 100%;
   min-height: 100%;
-  padding-bottom: 90px;
 }
 
 .content_images {
@@ -165,6 +164,33 @@ body {
 .middle-menu-color {
   background-color: #40c4ff;
 }
+
+.middle-menu-color .nav > li > a:hover {
+  background-color: #ffea00;
+}
+
+.middle-menu-color .nav > li > a:focus {
+  background-color: #ffea00;
+}
+
+/* стили страницы*/
+.content-page-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #d7070e;
+  font-weight: 600;
+  font-family: "IstokWebBoldItalic", sans-serif;
+}
+.content-page {
+  width: 80%;
+  min-height: 400px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+/* end стили страницы*/
 
 /*** Приветствие***/
 .content_wlecome {

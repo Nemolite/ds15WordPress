@@ -82,6 +82,10 @@ function custom_theme_options() {
 				'id'    => 'main_bottom_baners_3',
 				'title' => __( 'Нижние банеры 3 ряд', 'theme-text-domain' ),
 			),
+			array(
+				'id'    => 'youtube',
+				'title' => __( 'YouTube', 'theme-text-domain' ),
+			),
 
 			// Демо
 			array(
@@ -1335,7 +1339,47 @@ function custom_theme_options() {
 			'section'      => 'main_bottom_baners_3',			
 			'operator'     => 'and',
 		), 
-
+		// youtube
+		array(
+			'id'           => 'youtube_1',
+			'label'        => __( 'Первое видео', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на контент', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'youtube',			
+			'operator'     => 'and',
+		), 
+		array(
+			'id'           => 'youtube_2',
+			'label'        => __( 'Второе видео', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на контент', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'youtube',			
+			'operator'     => 'and',
+		),
+		array(
+			'id'           => 'youtube_3',
+			'label'        => __( 'Третье видео (в центре)', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на контент', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'youtube',			
+			'operator'     => 'and',
+		),
+		array(
+			'id'           => 'youtube_4',
+			'label'        => __( 'Четвертое видео', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на контент', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'youtube',			
+			'operator'     => 'and',
+		),
+		array(
+			'id'           => 'youtube_5',
+			'label'        => __( 'Пятое видео', 'theme-text-domain' ),
+			'desc'         => __( 'Ссылка на контент', 'theme-text-domain' ),			
+			'type'         => 'text',
+			'section'      => 'youtube',			
+			'operator'     => 'and',
+		),
 
 
 

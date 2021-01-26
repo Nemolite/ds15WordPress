@@ -70,8 +70,8 @@ wp_nav_menu( array(
 </form>
 
 <ul class="nav navbar-nav navbar-right">
-<li>
- <a href="#" id="hover-fix-color-top" >Версия для слабовидящих</a>
+<li class="fix-bvi">
+<?php echo do_shortcode( '[bvi text="Версия для слабовидящих"]' ); ?> 
 </li>
 
 </ul>

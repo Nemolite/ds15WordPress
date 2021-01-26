@@ -127,6 +127,10 @@ body {
   background-color: #40c4ff;
 }
 
+.fix-bvi {
+  padding-top: 7px;
+}
+
 /*------------ header finish---------*/
 
 /*------------ content---------*/
@@ -398,6 +402,7 @@ body {
   border-radius: 5px;
   margin: 0 auto;
   border: 1px solid #e5e5e5;
+  background-color: #40c4ff;
 }
 
 .btn-news:hover {

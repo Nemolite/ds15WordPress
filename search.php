@@ -10,15 +10,15 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main search_content">
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">
+				<h1 class="page-title content-page-title">
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'ds15' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Результаты поиска: %s', 'ds15' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</h1>
 			</header><!-- .page-header -->
@@ -50,4 +50,4 @@ get_header();
 
 <?php
 //get_sidebar();
-//get_footer();
+get_footer();

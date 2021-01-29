@@ -63,12 +63,11 @@ wp_nav_menu( array(
 );
 ?>
 <form class="navbar-form navbar-left">
-<div class="form-group">
- <input type="text" class="form-control" placeholder="Что искать?" value="<?php echo get_search_query() ?>" name="s" id="s">
-</div>
-<button type="submit" class="btn btn-default">Найти</button>
+   <div class="form-group">
+      <input type="text" class="form-control" placeholder="Что искать?" value="<?php echo get_search_query() ?>" name="s" id="s">
+   </div>
+   <input type="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Найти', 'submit button' ); ?>" />
 </form>
-
 <ul class="nav navbar-nav navbar-right">
 <li class="fix-bvi">
 <?php echo do_shortcode( '[bvi text="Версия для слабовидящих"]' ); ?> 

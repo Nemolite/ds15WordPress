@@ -745,6 +745,24 @@ body {
 
 /****** footer finish*******/
 
+/*  search */
+
+.search_img {
+  width: 300px;
+  height: 300px;
+}
+
+.search_content {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.search_footer {
+  width: 100%;
+  height: 70px;
+}
+
 /**********Адатив************/
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .content_video {

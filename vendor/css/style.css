@@ -763,6 +763,30 @@ body {
   height: 70px;
 }
 
+/* Страница новостей */
+
+.page_news {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.list_news {
+  width: 100%;
+  height: auto;
+}
+.list_news_date_block {
+  width: 20%;
+  display: inline-block;
+}
+.list_news_date {
+  color: #d7070e;
+}
+
+.list_news_title_block {
+  width: 79%;
+  display: inline-block;
+}
 /**********Адатив************/
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .content_video {

@@ -85,7 +85,7 @@ get_header();
   
 </div> <!-- class="owl-carousel" -->
 </div> <!-- class="content_slider" -->
-<a href="#">
+<a href="/news">
  <div class="btn-news">
     <p>Все новости</p>
  </div>

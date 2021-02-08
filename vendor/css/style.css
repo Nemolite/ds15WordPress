@@ -74,7 +74,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
+  /*font-size: inherit;*/
   font-weight: 400;
 }
 /*--------------------*/
@@ -781,11 +781,31 @@ body {
 }
 .list_news_date {
   color: #d7070e;
+  display: block;
+  position: relative;
+  top: -15px;
 }
 
 .list_news_title_block {
   width: 79%;
   display: inline-block;
+}
+
+.list_news_title span {
+  color: #d7070e;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "IstokWebBoldItalic", sans-serif;
+}
+
+.list_news_next_content p {
+  line-height: 1.15;
+  font-size: 15px;
+}
+
+.list_news_pagination {
+  width: 100%;
+  height: 50px;
 }
 /**********Адатив************/
 @media only screen and (min-width: 992px) and (max-width: 1200px) {

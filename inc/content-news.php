@@ -12,16 +12,22 @@
             ?> 
         </p> 
     </div>
-    <div class="list_news_title_block">
+    <div class="list_news_title_block">    
+    <a href="<?php echo get_permalink(); ?>">
         <p class="list_news_title">
         <span>
             <?php
             the_title();
             ?> 
       </span>
+      </p>
+      </a> 
+      <div class="list_news_next_content">
             <?php
              the_content("<span>Читать далее</span>");
             ?>
-    </div>        
-  </p>
+      </div>      
+    </div> 
+        
+ 
 </div>

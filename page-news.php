@@ -11,8 +11,7 @@ get_header();
    <?php 
    // Получение списка всех новостей   
     do_action('display_all_news',10);
-   ?>   
-
+   ?>  
   </div>
   <div class="col-md-4">
  <?php get_sidebar(); ?>

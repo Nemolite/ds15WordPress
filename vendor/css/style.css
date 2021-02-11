@@ -403,6 +403,7 @@ body {
   margin: 0 auto;
   border: 1px solid #e5e5e5;
   background-color: #40c4ff;
+  margin-bottom: 40px;
 }
 
 .btn-news:hover {
@@ -461,6 +462,19 @@ body {
 
 /** end страница новости***/
 
+/* photo_yandex*/
+.second_baners_row {
+  width: 100%;
+  height: 100%;
+  min-height: 125px;
+  margin-top: 20px;
+  background-color: #ffea00;
+  border-radius: 5px;
+  padding: 20px 20px 10px 20px;
+}
+
+/*end photo_yandex*/
+
 /******* photo********/
 
 .content_photo {
@@ -471,12 +485,19 @@ body {
 }
 
 .content_photo h1 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 26px;
   text-transform: uppercase;
   color: #d7070e;
   font-weight: 600;
+  font-family: "IstokWebBoldItalic", sans-serif;
+}
+
+.content_photo p {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
   font-family: "IstokWebBoldItalic", sans-serif;
 }
 

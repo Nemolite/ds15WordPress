@@ -5,6 +5,7 @@
 ?>
 <div class="content_photo">
   <h1>Наша фотогалерея</h1>
+  <p><a href="#">Посетите нашу фотогалерею</a></p>
     <div class="photo-galery">
         <div class="photo-single">
             <?php for ($i=1;$i<=8;$i++) {

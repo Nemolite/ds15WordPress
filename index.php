@@ -77,6 +77,7 @@ get_header();
          <p><?php the_content("<span>Читать далее</span>");?></p>
       </div>      
  </div>
+ 
          
 <?php        }       
     }

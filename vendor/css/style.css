@@ -300,7 +300,8 @@ body {
 /**** banners finish ******/
 
 /****slider ***/
-
+.content_news_block {
+}
 .content_slider {
   width: 90%;
   min-height: 400px;
@@ -641,7 +642,6 @@ body {
   width: 100%;
   height: 100%;
   min-height: 200px;
-  margin-top: 20px;
   background-color: #ffea00;
   border-radius: 5px;
   padding: 20px 20px 10px 20px;
@@ -662,8 +662,14 @@ body {
 
 .content_video {
   width: 100%;
-  height: auto;
+  height: 670px;
   margin: 0 auto;
+  background-image: url(../images/fon_video.jpg);
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%; /* Современные браузеры */
+  padding-top: 65px;
 }
 
 .content_video h1 {
@@ -788,9 +794,8 @@ body {
   width: 100%;
   height: 100%;
   min-height: 200px;
-  margin-top: 40px;
   background-color: #40c4ff;
-  border-radius: 5px;
+  border-radius: 0px 0px 5px 5px;
   padding: 20px 20px 10px 20px;
 }
 
@@ -937,7 +942,7 @@ body {
 }
 /**********Адатив************/
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1601px) {
   .content_images h1 {
     position: absolute;
     top: 130px;

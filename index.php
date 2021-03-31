@@ -44,7 +44,7 @@ get_header();
 
 
 <div class="content_slider">
-  <h1>Новости нашего десткого сада</h1>
+  <h1>Новости нашего детского сада</h1>
   <div class="owl-carousel">
   <?php  
   $args = array(

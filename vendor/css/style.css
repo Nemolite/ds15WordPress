@@ -437,6 +437,26 @@ body {
   margin: 0 auto;
 }
 
+.fon-site-main {
+  background: rgb(166, 201, 239);
+  background: linear-gradient(
+    0deg,
+    rgba(166, 201, 239, 1) 0%,
+    rgba(132, 217, 255, 1) 35%,
+    rgba(166, 201, 239, 1) 100%
+  );
+  margin-top: -20px;
+}
+
+.nav-previous,
+.nav-next {
+  padding: 0px 20px;
+}
+
+.entry-meta {
+  padding-left: 20px;
+}
+
 .onenews__title {
   text-align: center;
   font-size: 26px;
@@ -451,6 +471,7 @@ body {
 .onenews__text {
   font-size: 18px;
   line-height: 1.18;
+  padding: 0px 20px;
 }
 
 .onenews__text p {

@@ -4,7 +4,10 @@
  */
 ?>
 <div class="content_photo">
-  <h1>Наша фотогалерея</h1>  
+<div class="title-photo">
+<h1>Наша фотогалерея</h1> 
+</div>
+  
     <div class="photo-galery">    
     <?php echo do_shortcode('[metaslider id="795"]'); ?> <!-- 885 -->
     </div><!-- class="photo-galery"-->

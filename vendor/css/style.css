@@ -544,8 +544,17 @@ body {
   padding-top: 20px;
 }
 
-.content_photo h1 {
+.title-photo {
+  width: 35%;
+  height: 35px;
+  margin: 0 auto;
+  background-color: #40c4ff;
   margin-bottom: 20px;
+  padding-top: 4px;
+}
+
+.content_photo h1 {
+  margin-top: 3px;
   text-align: center;
   font-size: 26px;
   text-transform: uppercase;
@@ -595,12 +604,16 @@ body {
 
 .photo-galery {
   width: 60%;
-  height: 400px;
+  height: auto;
   margin: 0 auto;
   border: 1px solid #e5e5e5;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   margin-bottom: 65px;
+  -webkit-box-shadow: 0px 5px 10px 13px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 13px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 13px rgba(34, 60, 80, 0.2);
+  border: 10px solid #40c4ff;
 }
 
 .photo-single {
@@ -750,9 +763,10 @@ body {
   padding: 3px;
   width: 100%;
   height: 400px;
-  border: 1px solid #e5e5e5;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  -webkit-box-shadow: 0px 5px 10px 13px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 13px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 13px rgba(34, 60, 80, 0.2);
+  border: 10px solid #40c4ff;
 }
 
 .youtube-mini {

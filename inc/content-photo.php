@@ -9,7 +9,7 @@
 </div>
   
     <div class="photo-galery">    
-    <?php echo do_shortcode('[metaslider id="795"]'); ?> <!-- 885 -->
+    <?php echo do_shortcode('[metaslider id="885"]'); ?> <!-- 885 -->
     </div><!-- class="photo-galery"-->
     <a href="https://disk.yandex.ru/d/fRaR01ie3OcaUQ?w=1" target ="_blank">
       <div class="content_photo_btn">

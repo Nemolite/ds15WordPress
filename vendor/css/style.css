@@ -454,7 +454,7 @@ body {
 }
 
 .entry-meta {
-  padding-left: 20px;
+  padding-left: 120px;
 }
 
 .onenews__title {
@@ -471,7 +471,7 @@ body {
 .onenews__text {
   font-size: 18px;
   line-height: 1.18;
-  padding: 0px 20px;
+  padding: 0px 120px;
 }
 
 .onenews__text p {
@@ -540,8 +540,8 @@ body {
   -moz-background-size: 100%; /* Firefox 3.6+ */
   -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
   -o-background-size: 100%; /* Opera 9.6+ */
-  background-size: 100%; /* Современные браузеры */
-  padding-top: 20px;
+  background-size: 100%; /* Современные браузеры */  
+  padding-top: 30px;
 }
 
 .title-photo {
@@ -608,12 +608,13 @@ body {
   margin: 0 auto;
   border: 1px solid #e5e5e5;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  margin-bottom: 65px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);  
   -webkit-box-shadow: 0px 5px 10px 13px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 5px 10px 13px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 5px 10px 13px rgba(34, 60, 80, 0.2);
   border: 10px solid #40c4ff;
+  margin-bottom: 32px;
+  margin-top: 25px;
 }
 
 .photo-single {
@@ -939,7 +940,7 @@ body {
   margin-bottom: 50px;
   margin-top: -20px;
   padding-top: 20px;
-  background-image: url(../images/fon_news.jpg);
+  background-image: url(../images/fon_news2.jpg);
   -moz-background-size: 100%; /* Firefox 3.6+ */
   -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
   -o-background-size: 100%; /* Opera 9.6+ */

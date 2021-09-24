@@ -77,4 +77,30 @@
 </a>
 <?php }?> 
 <?php }?> 
+
+<!-- четвертый ряд -->
+<?php for ($i=1;$i<=5;$i++) { ?>
+  <?php 
+    $main_bottom_link = 'main_bottom_link_4_'.$i;    
+    $main_bottom_baner = 'main_bottom_baner_4_'.$i;
+    $main_bottom_text = 'main_bottom_text_4_'.$i;
+  ?>
+  <?php if (
+    (!empty(ot_get_option( $main_bottom_link )))&&
+    (!empty(ot_get_option( $main_bottom_baner )))&&
+    (!empty(ot_get_option( $main_bottom_text ))) 
+  ) { ?>
+<a href="<?php echo ot_get_option( $main_bottom_link );?>" target="_blank">
+    <div class="baner-inner">
+    <div class="baner-inner_img">
+        <img src="<?php echo ot_get_option( $main_bottom_baner );?>" alt="">
+    </div>
+        <div class="baner-inner_text">
+            <p><?php echo ot_get_option( $main_bottom_text );?></p>
+        </div>
+    </div>
+</a>
+<?php }?> 
+<?php }?> 
+
 </div><!-- class="dop-baners" -->

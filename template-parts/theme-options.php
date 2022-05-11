@@ -48,6 +48,10 @@ function custom_theme_options() {
 				'id'    => 'welcome',
 				'title' => __( 'Приветствие', 'theme-text-domain' ),
 			),
+			array(
+				'id'    => 'objava',
+				'title' => __( 'Объявление', 'theme-text-domain' ),
+			),
 			/*			
 			array(
 				'id'    => 'main_slider',
@@ -140,6 +144,31 @@ function custom_theme_options() {
 				'desc'         => __( 'Подпись под текстом (красным)', 'theme-text-domain' ),			
 				'type'         => 'text',
 				'section'      => 'welcome',			
+				'operator'     => 'and',
+			),
+		
+		// ---------------Привествие finish----------------
+		
+		//---------------- Объявление ---------------
+		// Заголовок объявления
+		
+		array(
+				'id'           => 'head_objava_text',
+				'label'        => __( 'Text', 'theme-text-domain' ),
+				'desc'         => __( 'Заголовок объявления (красным)', 'theme-text-domain' ),				
+				'type'         => 'text',
+				'section'      => 'objava',			
+				'operator'     => 'and',
+			),			
+		
+		// Ссылка на материал
+		
+		array(
+				'id'           => 'objava_link',
+				'label'        => __( 'Link', 'theme-text-domain' ),
+				'desc'         => __( 'Ссылка на материал', 'theme-text-domain' ),			
+				'type'         => 'text',
+				'section'      => 'objava',			
 				'operator'     => 'and',
 			),
 		

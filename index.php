@@ -98,6 +98,7 @@ get_header();
  <script>Widget("https://pos.gosuslugi.ru/form", 268154)</script>
 </div>
 
+<div class="content_news_block">
 <div class="content_slider">
   <h1>Новости нашего детского сада</h1>
   <div class="owl-carousel">
@@ -141,6 +142,7 @@ get_header();
   
 </div> <!-- class="owl-carousel" -->
 </div> <!-- class="content_slider" -->
+</div> <!-- class="content_news_block" -->
 <a href="/news">
  <div class="btn-news">
     <p>Все новости</p>
@@ -171,6 +173,7 @@ $main_middle_text = 'main_middle_text_'.$i;
 <?php }?>  
 <?php }?> 
 </div>
+<!-- Фотогалерея -->
 <?php get_template_part( 'inc/content', 'photo' );?>
 
 <!-- Средние банеры -->

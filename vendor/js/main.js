@@ -5,22 +5,26 @@ $(function() {
     items: 4,
     margin: 10,
     loop: true,
-    nav: true,
+    nav: true,    
     responsive:{
       0:{
-        items:1
+        items:1       
       },
       400:{
         items:2
+       
       },
       768:{
         items:3
+       
       },
       1180:{
         items:4
+       
       },
       1366:{
-        items:5
+        items:5       
+  
       }
     }
   });

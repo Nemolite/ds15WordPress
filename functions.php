@@ -46,6 +46,10 @@ if ( ! function_exists( 'ds15_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
+		/**
+		 * Корректировка вывода миниатюр
+ 		*/
+		set_post_thumbnail_size( 193, 200, true );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -202,6 +206,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 */
 add_filter( 'gutenberg_use_widgets_block_editor', '__return_false' );
 add_filter( 'use_widgets_block_editor', '__return_false' );
+
 
 
 

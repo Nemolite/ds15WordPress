@@ -23,7 +23,7 @@ function theme_options_parent($parent ) {
 add_filter( 'ot_theme_options_parent_slug', 'theme_options_parent',20 );
 
 /**
- * Подключение верхнеt оменю
+ * Подключение верхнего меню
  */
 if ( ! function_exists( 'ds15_theme_menu' ) ) {
 	function ds15_theme_menu( ){

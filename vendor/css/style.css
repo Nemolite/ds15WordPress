@@ -373,6 +373,7 @@ body {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   padding: 10px;
+  margin-bottom: 40px;
 }
 
 .item-news_info h3 {
@@ -1030,6 +1031,33 @@ body {
 }
 
 /* end Пагинация*/
+/*Страница вывода конкурсов*/
+.content-page-disc {
+  text-align: center;
+  color: #d7070e;
+  font-weight: 600;
+  font-family: "IstokWebBoldItalic", sans-serif;
+  font-size: 20px;
+}
+
+.disc-rest {
+  margin-bottom: 50px;
+}
+
+.page_concurs {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+  margin-top: -20px;
+  padding-top: 20px;
+  background-image: url(../images/tet.jpg);
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%; /* Современные браузеры */
+}
+
+
 /**********Адатив************/
 
 @media only screen and (min-width: 1601px) {

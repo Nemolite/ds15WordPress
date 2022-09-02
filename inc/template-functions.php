@@ -107,5 +107,32 @@ add_action( 'display_all_news', 'ds15_display_all_news' );
 }
  add_action( 'pagination_all_news', 'ds15_pagination_news',10,2 );
 
-
- 
+/**
+ * Вывод конкурсов на отдельной странице
+ */
+function ds15_display_all_concurs(){
+	
+	$paged = get_query_var('paged') ? get_query_var('paged') : 1;
+		$result_array = array();
+		$args = array(
+			'category_name'=>'concurs',
+			'post_type' => 'post',
+			'posts_per_page' => 10, 
+			'paged' => $paged,                               
+				   
+		);
+		$query = new WP_Query($args);
+		if( $query->have_posts() ){
+			while( $query->have_posts() ){            
+				$query->the_post();
+				get_template_part('inc/content','concurs');								
+			}
+						 
+		}	
+		wp_reset_postdata();
+	
+		do_action('pagination_all_news',$query->max_num_pages);
+			
+		return $result_array;
+	}
+	add_action( 'display_all_concurs', 'ds15_display_all_concurs' ); 

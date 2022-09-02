@@ -44,6 +44,7 @@ function ds15_display_all_news(){
 $paged = get_query_var('paged') ? get_query_var('paged') : 1;
     $result_array = array();
     $args = array(
+		'cat'=>-18, // исключить конкурсы
         'post_type' => 'post',
         'posts_per_page' => 10, 
 		'paged' => $paged,                               
@@ -114,7 +115,7 @@ function ds15_display_all_concurs(){
 	
 	$paged = get_query_var('paged') ? get_query_var('paged') : 1;
 		$result_array = array();
-		$args = array(
+		$args = array(			
 			'category_name'=>'concurs',
 			'post_type' => 'post',
 			'posts_per_page' => 10, 

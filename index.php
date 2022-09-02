@@ -104,6 +104,7 @@ get_header();
   <div class="owl-carousel">
   <?php  
   $args = array(
+        'cat'=>-18, // исключить конкурсы
         'post_type' => 'post',                   
         'order' => 'DESC',
         'post_status' => 'publish', 

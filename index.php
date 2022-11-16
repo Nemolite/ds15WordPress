@@ -17,10 +17,23 @@ get_header();
 <div class="content_wlecome">
 			  
 <div class="objava">
-<a href="<?php echo ot_get_option( 'objava_link' );?>" target="_blank">
-	<?php echo ot_get_option( 'head_objava_text' );?>
-</a>
+  <a href="<?php echo ot_get_option( 'objava_link' );?>" target="_blank">
+    <?php echo ot_get_option( 'head_objava_text' );?>
+  </a>
 </div>
+
+<div class="main-ban-konkurs">
+  <div class="col-md-8 col-sm-8 col-xs-12">
+<a class="main-ban-konkurs-title" href="#">VII городской фестиваль детского творчества «Разноцветные капельки»</a>
+  </div>
+  <div class="col-md-4 col-sm-4 col-xs-12">
+    <a href="#">
+  <img src="<?php echo bloginfo('template_url'); ?>/vendor/images/fonkon.jpg" alt="">
+  </a>
+  </div>
+</div>
+
+
 
 <div class="row">
 <div class="col-md-4 col-sm-4 col-xs-12">
@@ -173,6 +186,38 @@ $main_middle_text = 'main_middle_text_'.$i;
 </a>
 <?php }?>  
 <?php }?> 
+
+
+
+<?php for ($k=1;$k<=5;$k++) { ?>
+<?php 
+$main_middle_link2 = 'main_middle_link_'.$k.'2';
+$main_middle_baner2 = 'main_middle_baner_'.$k.'2';
+$main_middle_text2 = 'main_middle_text_'.$k.'2';
+?>
+ <?php if (
+    (!empty(ot_get_option( $main_middle_link2 )))&&
+    (!empty(ot_get_option( $main_middle_baner2 )))&&
+    (!empty(ot_get_option( $main_middle_text2 ))) 
+  ) { ?>
+<a href="<?php echo ot_get_option( $main_middle_link2 );?>" target="_blank">
+    <div class="baner-inner">
+    <div class="baner-inner_img">
+        <img src="<?php echo ot_get_option( $main_middle_baner2 );?>" alt="">
+    </div>
+        <div class="baner-inner_text">
+            <p><?php echo ot_get_option( $main_middle_text2 );?></p>
+        </div>
+    </div>
+</a>
+<?php }?>  
+<?php }?>
+
+
+
+
+
+
 </div>
 <!-- Фотогалерея -->
 <?php get_template_part( 'inc/content', 'photo' );?>

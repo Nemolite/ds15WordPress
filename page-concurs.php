@@ -7,7 +7,7 @@ get_header();
 <div class="page_concurs">
     <h1 class="content-page-title">Конкурсы</h1>
     <p class="content-page-disc">Уважаемые педагоги!</p>
-    <p class="content-page-disc disc-rest">На этой странице вы найдете список проводимых конкрусов</p>
+    <p class="content-page-disc disc-rest">На этой странице вы найдете список проводимых конкурсов</p>
 <div class="row">
   <div class="col-md-offset-1 col-md-11">
    <?php 

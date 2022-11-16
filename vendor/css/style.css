@@ -528,7 +528,7 @@ body {
 .second_baners_row {
   width: 100%;
   height: 100%;
-  min-height: 125px;
+  min-height: 210px;
   margin-top: 20px;
   background-color: #ffea00;
   border-radius: 5px;
@@ -1057,6 +1057,24 @@ body {
   background-size: 100%; /* Современные браузеры */
 }
 
+.main-ban-konkurs {
+  width: 100%;
+height: 300px;
+background-color: #40c4ff;
+border-radius: 5px;
+padding-top: 14px;
+}
+.main-ban-konkurs-title {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 55px;
+  font-style: italic;
+  
+}
 
 /**********Адатив************/
 
@@ -1651,4 +1669,5 @@ body {
     font-size: 20px;
     margin-top: -21px;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
